@@ -15,6 +15,6 @@ jobs:
     - uses: actions/checkout@v1
     - name: Build & Push Image
       run: |
-        echo "${{ secrets.DOCKERYS }}" | docker login -u "lbhaskar4" --password-vijaykumar
+        echo "${{ secrets.DOCKERYS }}" | docker login -u "lbhaskar4" -p vijaykumar
         docker image build -t lbhaskar4/pyflask:latest .
         docker push lbhaskar4/pyflask:latest
