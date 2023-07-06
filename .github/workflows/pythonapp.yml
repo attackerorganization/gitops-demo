@@ -16,5 +16,5 @@ jobs:
     - name: Build & Push Image
       run: |
         echo "${{ secrets.DOCKERYS }}" | docker login -u "lbhaskar4" -p vijaykumar
-        docker image build -t lbhaskar4/pyflask:latest .
-        docker push lbhaskar4/pyflask:latest
+        docker image build -t attackbroz2021/pyflask:latest .
+        docker push attackbroz2021/pyflask:latest
